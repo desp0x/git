@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug Frozen Gift</title>
+</head>
+<body>
+    <h1>Frozen Gift Debug</h1>
+    <button onclick="unlock()">Unlock Premium</button>
+    <button onclick="showTier()">Check Tier</button>
+    <pre id="info"></pre>
+
+    <script>
+        function unlock() {
+            SnowGiftBridge.unlockPremiumGift("frost_king");
+            alert("Called unlockPremiumGift");
+        }
+
+        function showTier() {
+            let tier = SnowGiftBridge.getCurrentTier();
+            document.getElementById("info").innerText = "Current Tier: " + tier;
+        }
+    </script>
+</body>
+</html>
